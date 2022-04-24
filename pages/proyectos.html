@@ -51,7 +51,7 @@
         <section class="proyectos__contenedor">
             <h2 class="proyectos__titulo" data-aos="zoom-in" data-aos-duration="700">Proyectos</h2>
 
-        <div class="contenedor__trabajo row no-gutters position-relative shadow p-3 mb-5 bg-body rounded" data-aos="zoom-in" data-aos-duration="700">
+        <div class="contenedor__trabajo row no-gutters position-relative shadow-lg p-3 mb-5 bg-body rounded" data-aos="zoom-in" data-aos-duration="700">
             <div class="col-md-6 mb-md-0 p-md-6 contenedor__imagen__trabajo">
             <img src="../images/trabajo1.jpg" class="w-100" alt="trabajo 1">
             </div>
@@ -91,10 +91,22 @@
                 </div>
             </div>
 
-        </div>
-
         </section>
+        
+        <section class="formulario" data-aos="zoom-in" data-aos-duration="700">
+            <form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
+                <h2 class="formulario__titulo">Contacto</h2>
+                <input class="formulario__nombre" type="text" required placeholder="Nombre y apellido"> <br>
+                <input class="formulario__mail" type="email" required placeholder="Email"> <br>
+                <textarea class="formulario__mensaje" type="text" placeholder="Deja tu mensaje"></textarea>
+                <br>
+                <input class="formulario__enviar" type="submit" value="Enviar">
+                <br>
+                <br>
+            </form>
+                </section>
     </div>
+    
             <footer>
             <div class="imagenesfooter">
                 <a target="blank" href='https://web.whatsapp.com/'><img class="wppfooter" src="../images/wpp.png" alt="whatsapp"></a>

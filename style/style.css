@@ -20,11 +20,10 @@ body {
     height: 100px;
 }
 
-
 .navbar-nav {
     font-weight: 500;
     font-size: 1.2rem;
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
 .navbar-collapse {
@@ -84,6 +83,7 @@ a {
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 40%;
 }
 
 .botoncontactame{
@@ -146,9 +146,8 @@ a {
     margin: auto;
     width: 48%;
     margin-top: 1.7rem;
-    border: 2px solid #D11B35;
     background-color: #141414;
-    border-radius: 3px !important;
+    border-radius: 10px !important;
 }
 
 .card-body {
@@ -343,25 +342,22 @@ select {
     height: 15rem;
 }
 
-.cualidades{
-    margin-top: 30px;
-    height: 150px;
-    width: 200px;
-    text-align: center;
-    transition-duration: 0.5s;
+.card-cualidades {
+    margin-top: 3rem;
+    padding: 10px;
 }
 
-.cualidades__icono {
-    margin: 20px 40px 20px 40px ;
-    height: 90px;
+.card-img-top-cualidades {
+    margin: 0 auto;
+    width: 80px;
 }
 
-.cualidades__titulo {
+.card-text-cualidades {
     font-size: 1.3rem;
     font-weight: 600;
-    color: #fff;
-    transition-duration: 0.5s;
+    margin-top: 1.5rem;
 }
+
 
 .habilidades__lenguajes {
     margin-top: 5rem;
@@ -535,9 +531,9 @@ select {
     width: 90%;
     height: 400px;
     overflow: hidden;
-    border: #D11B35 solid 2px;
     border-radius: 10px !important;
-    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid #D11B35;
+    background-color: #141414;
     transition-duration: 0.5s;
 }
 
@@ -630,6 +626,17 @@ margin-top: 12px;
 
 
 @media only screen and (max-width: 576px) {
+
+    .navbar-nav {
+        margin-left: 15px !important;
+    }
+
+    .nav-link {
+        color: #fff !important;
+        width: 25%;
+        margin-top: .5rem;
+        padding: .5rem;
+    }
 
     /* SECCION INDEX */
 
@@ -750,6 +757,7 @@ margin-top: 12px;
     
     .textocontacto__parrafo{
         height: auto;
+        font-size: 1.1rem;
     }
     
 
@@ -777,36 +785,21 @@ margin-top: 12px;
         margin: 0 auto;
         width: 90%;
         height: auto;
+        font-size: 1rem;
+        text-align: left;
     }
     
     .sobremi__caracteristicas {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
         height: auto;
     }
     
-    .cualidades{
-        margin-top: 3rem;
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    .card-text-cualidades {
+        font-size: 1.2rem;
     }
     
-    .cualidades__icono {
-        margin: 5px auto;
-        height: 75%;
-    }
-    
-    .cualidades__titulo {
-        font-size: 1.4rem;
-    }
     
     /* SECCION HABILIDADES */
     
@@ -851,16 +844,16 @@ margin-top: 12px;
     
     .caja__individual {
         margin: 25px auto;
-        width: 80%;
+        width: 70%;
         height: 260px;
     }
     
     .titulo__programa {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
     
     .bajada__programa {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     
     .programa__logo{
