@@ -21,7 +21,6 @@ body {
 }
 
 
-
 .navbar-nav {
     font-weight: 500;
     font-size: 1.2rem;
@@ -130,7 +129,7 @@ a {
 .proyectos__cajaindex {
     margin: 0 auto;
     text-align: center;
-    width: 95%;
+    width: 80%;
 }
 
 .proyectos__titulo {
@@ -146,8 +145,8 @@ a {
 
 .card {
     margin: auto;
-    width: 45%;
-    margin-top: 2rem;
+    width: 48%;
+    margin-top: 1.7rem;
     border: 2px solid #D11B35;
     border-radius: 3px !important;
 }
@@ -672,7 +671,7 @@ margin-top: 12px;
     /* SECCION INDEX */
 
     .card {
-        width: 80%;
+        width: 85%;
     }
     
     .card-img {
